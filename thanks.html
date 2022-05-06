@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Thanks!</title>
+
+    <style>
+        img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+            display: none !important;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .popup-class{
+            border-radius: 15px;
+        }
+
+        .thanks img{
+            width: 100%;
+            height: 100vh;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 19px;
+            color: rgb(136, 129, 129);
+            margin-top: 8px;
+        }
+        a:hover{
+            color: rgb(55, 155, 50);
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="thanks">
+        <img src="/images/pexel1.jpg">
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        swal.fire({
+	    title:'Email sent successfully!',
+	    icon:'success',
+        footer:'I will reply as soon as possible',
+        html: "<a class=''back href='index.html'>~ Click and go back to my Portfolio ~</a>",
+	    customClass:{
+	    	popup: 'popup-class'
+	    },
+        padding:'1rem',
+	    showConfirmButton: false,
+	    allowOutsideClick:false,
+	    allowEscapeKey:false,
+	    allowEnterKey:false
+})
+    </script>
+</body>
+</html>
